@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   width: 100%;
   table-layout: fixed;
@@ -20,9 +30,11 @@
 }
 
 .body img {
-  width: 100%;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .main-con {
@@ -101,7 +113,7 @@
 
 @media (max-width: 480px) {
   .wrapper {
-    padding: 20px;
+    padding: 10px;
   }
   .header img {
     width: 100px;
