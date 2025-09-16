@@ -1,0 +1,41 @@
+$primary-color: #007bff;
+$background-color: #0b2a40;
+$text-color: #555;
+$font-stack: Arial, sans-serif; 
+$font-size: 14px;
+
+.wrapper {width: 100%;table-layout: fixed;background-color: #ffffff;padding: 20px 0;}
+.main-content {max-width: 600px;margin: 0 auto;background-color: #ffffff;border: 1px solid #e0e0e0;border-radius: 6px;font-family: $font-stack;color: $text-color;}
+
+.header img {width: 150px;}
+
+.body img {width: 100%; border-top-right-radius: 3px;border-top-left-radius: 3px;}
+.main-con {box-shadow: 2px 5px 10px 5px rgb(0,0,0,0.1);border-radius: 3px;}
+.body {text-align: center;position: relative;padding: 0 10px;}
+.body-text {font-size: 28px;font-weight: normal;}
+.body h1 {font-size: 24px;}
+.body p {max-width: 350px;width: 100%;margin: 0 auto;font-size: $font-size;word-wrap: break-word;}
+
+.button {display: inline-block; line-height: 40px; width: 100%;max-width: 200px ; text-decoration: none;color:#ffffff; background-color: #faa107    ;border-radius:3px;margin: 20px 0 30px 0;}
+.button:focus {outline: 2px solid #005999;}
+.button:hover {background-color:#e6950a;}
+
+.footer {text-align: center;padding-top: 10px;}
+.footer h2 {font-family: "Nanum Pen Script", cursive;font-weight: 400;font-style: normal;}
+.footer p {font-size: 12px; color: #a19f9f;}
+.links {display: flex;gap: 10px;justify-content: center;}
+.social-link img{width: 30px;}
+
+
+@media (max-width:480px) {
+    .wrapper {padding: 20px;}
+    .header img {width: 100px;}
+    .body h1 {font-size: 22px;}
+    .body p {max-width: 270px;}
+}
+
+@media (max-width:360px) {
+    .wrapper {padding: 10px 0;}
+    .body h1 {font-size: 20px;}
+    .body p {max-width: 250px;}
+}
